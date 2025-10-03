@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Lab2",
-    "project_version":    "e304ff4-dirty",
+    "project_version":    "0f53efd-dirty",
     "project_path":       "D:/STIC 1/Week-11-Special_topics/Lab2",
     "idf_path":           "C:/Users/User/esp/v5.5.1/esp-idf",
     "build_dir":          "D:/STIC 1/Week-11-Special_topics/Lab2/build",

@@ -1,0 +1,111 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\User\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\STIC 1\Week-11-Special_topics\Lab4\build\Lab4.elf D:\STIC 1\Week-11-Special_topics\Lab4\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\User\esp\v5.5.1\esp-idf\tools\idf.py'
+e  : DIO
+[0;32mI (41) boot.esp32: S�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  3 2025 09:18:01[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a4cch ( 42188) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a4f4 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c8f4 vaddr=40080000 size=03724h ( 14116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14e20h ( 85536) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034e48 vaddr=40083724 size=098e0h ( 39136) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0003e730 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     Lab4[0m
+[0;32mI (189) app_init: App version:      e304ff4-dirty[0m
+[0;32mI (193) app_init: Compile time:     Oct  3 2025 09:14:29[0m
+[0;32mI (198) app_init: ELF file SHA256:  eb9629a4c...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 4008D004 len 00012FFC (75 KiB): IRAM[0m
+[0;32mI (252) spi_flash: detected chip: generic[0m
+[0;32mI (255) spi_flash: flash io: dio[0m
+[0;33mW (258) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (270) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (1288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (1288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (2288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (2288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (3288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (3288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (4288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (4288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (5288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (5288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (6288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (6288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (7288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (7288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (8288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (8288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (9288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (9288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (10288) LDR_LED: LDR Value: 4095[0m
+[0;32mI (10288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (11288) LDR_LED: LDR Value: 4053[0m
+[0;32mI (11288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (12288) LDR_LED: LDR Value: 2801[0m
+[0;32mI (12288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (13288) LDR_LED: LDR Value: 2555[0m
+[0;32mI (13288) LDR_LED: LED ON (Dark)[0m
+[0;32mI (14288) LDR_LED: LDR Value: 1361[0m
+[0;32mI (14288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (15288) LDR_LED: LDR Value: 36[0m
+[0;32mI (15288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (16288) LDR_LED: LDR Value: 0[0m
+[0;32mI (16288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (17288) LDR_LED: LDR Value: 0[0m
+[0;32mI (17288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (18288) LDR_LED: LDR Value: 0[0m
+[0;32mI (18288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (19288) LDR_LED: LDR Value: 0[0m
+[0;32mI (19288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (20288) LDR_LED: LDR Value: 0[0m
+[0;32mI (20288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (21288) LDR_LED: LDR Value: 0[0m
+[0;32mI (21288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (22288) LDR_LED: LDR Value: 0[0m
+[0;32mI (22288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (23288) LDR_LED: LDR Value: 0[0m
+[0;32mI (23288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (24288) LDR_LED: LDR Value: 0[0m
+[0;32mI (24288) LDR_LED: LED OFF (Bright)[0m
+[0;32mI (25288) LDR_LED: LDR Value: 0[0m
+[0;32mI (25288) LDR_LED: LED OFF (Bright)[0m

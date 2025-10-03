@@ -1,0 +1,100 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\User\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\STIC 1\Week-11-Special_topics\Lab4\build\Lab4.elf D:\STIC 1\Week-11-Special_topics\Lab4\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\User\esp\v5.5.1\esp-idf\tools\idf.py'
+�T�H(
+B��J��ѹesp32: SPets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  3 2025 09:18:01[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adb4h ( 44468) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001addc vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d234 vaddr=40080000 size=02de4h ( 11748) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=161bch ( 90556) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=000361e4 vaddr=40082de4 size=0a3f8h ( 41976) load[0m
+[0;32mI (162) esp_image: segment 5: paddr=000405e4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     Lab4[0m
+[0;32mI (192) app_init: App version:      e304ff4-dirty[0m
+[0;32mI (197) app_init: Compile time:     Oct  3 2025 09:14:29[0m
+[0;32mI (202) app_init: ELF file SHA256:  6137c6df5...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2DB0 len 0002D250 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008D1DC len 00012E24 (75 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (273) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) LDR_LED: Start ADC → LED PWM control[0m
+[0;32mI (301) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;33mW (301) LDR_LED: WARNING: TOO DARK! (ADC 0)[0m
+[0;32mI (811) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (1321) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (1831) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (2341) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (2851) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (3361) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (3871) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (4381) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (4891) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (5401) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (5911) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (6421) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (6931) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (7441) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (7951) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (8461) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (8971) LDR_LED: ADC: 0  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (9481) LDR_LED: ADC: 4  Voltage: 0.14 V  Duty: 0[0m
+[0;32mI (9991) LDR_LED: ADC: 56  Voltage: 0.19 V  Duty: 3[0m
+[0;32mI (10501) LDR_LED: ADC: 152  Voltage: 0.27 V  Duty: 9[0m
+[0;32mI (11011) LDR_LED: ADC: 278  Voltage: 0.37 V  Duty: 17[0m
+[0;32mI (11521) LDR_LED: ADC: 426  Voltage: 0.49 V  Duty: 26[0m
+[0;32mI (12031) LDR_LED: ADC: 596  Voltage: 0.63 V  Duty: 37[0m
+[0;32mI (12541) LDR_LED: ADC: 799  Voltage: 0.80 V  Duty: 49[0m
+[0;32mI (13051) LDR_LED: ADC: 1044  Voltage: 1.00 V  Duty: 65[0m
+[0;32mI (13561) LDR_LED: ADC: 1325  Voltage: 1.23 V  Duty: 82[0m
+[0;32mI (14071) LDR_LED: ADC: 1627  Voltage: 1.48 V  Duty: 101[0m
+[0;32mI (14581) LDR_LED: ADC: 2026  Voltage: 1.80 V  Duty: 126[0m
+[0;32mI (15091) LDR_LED: ADC: 2383  Voltage: 2.10 V  Duty: 148[0m
+[0;32mI (15601) LDR_LED: ADC: 2696  Voltage: 2.35 V  Duty: 167[0m
+[0;32mI (16111) LDR_LED: ADC: 2980  Voltage: 2.57 V  Duty: 185[0m
+[0;32mI (16621) LDR_LED: ADC: 3242  Voltage: 2.74 V  Duty: 201[0m
+[0;33mW (16621) LDR_LED: WARNING: TOO BRIGHT! (ADC 3242)[0m
+[0;32mI (17131) LDR_LED: ADC: 3481  Voltage: 2.87 V  Duty: 216[0m
+[0;32mI (17641) LDR_LED: ADC: 3688  Voltage: 2.97 V  Duty: 229[0m
+[0;32mI (18151) LDR_LED: ADC: 3852  Voltage: 3.05 V  Duty: 239[0m
+[0;32mI (18661) LDR_LED: ADC: 3981  Voltage: 3.10 V  Duty: 247[0m
+[0;32mI (19171) LDR_LED: ADC: 4088  Voltage: 3.15 V  Duty: 254[0m

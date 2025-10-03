@@ -23,7 +23,7 @@ static bool check_efuse(void)
     } else {
         ESP_LOGI(TAG, "eFuse Two Point: ไม่รองรับ");
     }
-    // ตรวจสอบว่า Vref ถูกเขียนลงใน eFuse หรือไม่
+            // ตรวจสอบว่า Vref ถูกเขียนลงใน eFuse หรือไม่
     if (esp_adc_cal_check_efuse(ESP_ADC_CAL_VAL_EFUSE_VREF) == ESP_OK) {
         ESP_LOGI(TAG, "eFuse Vref: รองรับ");
     } else {
